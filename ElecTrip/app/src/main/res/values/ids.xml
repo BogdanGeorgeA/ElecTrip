@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="manufacturerEdit" type="id"></item>
+    <item name="modelEdit" type="id"></item>
+    <item name="submitButton" type="id"></item>
+    <item name="tvResult" type="id"></item>
+    <item name="yearOfFabricationEdit" type="id"></item>
+    <item name="plateEdit" type="id" />
+    <item name="backButton" type="id" />
+    <item name="chargeSubTypeSpinner" type="id" />
+    <item name="capacityEdit" type="id" />
+    <item name="chargeTypeSpinner" type="id" />
+    <item name="averageConsumptionEdit" type="id" />
+    <item name="mapView" type="id" />
+    <item name="startButton" type="id" />
+    <item name="chargingCapacity" type="id" />
+    <item name="textView4" type="id" />
+    <item name="textView6" type="id" />
+    <item name="textView5" type="id" />
+    <item name="location" type="id" />
+    <item name="payingMethod" type="id" />
+    <item name="price" type="id" />
+    <item name="schedule" type="id" />
+    <item name="chargingType" type="id" />
+    <item name="logo" type="id" />
+    <item name="address" type="id" />
+    <item name="city" type="id" />
+    <item name="format" type="id" />
+    <item name="powerType" type="id" />
+    <item name="RoutingOptions" type="id" />
+
+
+
+</resources>

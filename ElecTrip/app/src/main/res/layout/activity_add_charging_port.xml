@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AddChargingPort"
+    android:orientation="vertical">
+
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/blue_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Create charging port"
+        />
+    <ScrollView
+        android:id="@+id/white_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/white_view"
+        app:layout_constraintBottom_toBottomOf="@+id/submitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scroll_view_results"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/viewConnectors"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@drawable/blue_button_2"
+                android:text="View Connectors"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/standard" />
+
+
+            <Button
+                android:id="@+id/addConnector"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@drawable/blue_button_2"
+                android:text="Add Connector"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/standard" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/c1"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="Address"
+                android:maxLines="3"
+                android:minWidth="150dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/c1"
+                android:textColorHint="@color/c1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/c1"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="City"
+                android:maxLength="25"
+                android:minWidth="150dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/c1"
+                android:textColorHint="@color/c1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/address" />
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/c1"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="Price"
+                android:digits="0123456789."
+                android:inputType="text"
+                android:maxLength="4"
+                android:minWidth="150dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/c1"
+                android:textColorHint="@color/c1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/city" />
+
+            <EditText
+                android:id="@+id/maxAmperage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/c1"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="Max amperage(A)"
+                android:digits="0123456789"
+                android:inputType="text"
+                android:maxLength="4"
+                android:minWidth="150dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/c1"
+                android:textColorHint="@color/c1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/price" />
+
+            <EditText
+                android:id="@+id/maxVoltage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/c1"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="Max voltage(V)"
+                android:inputType="text"
+                android:digits="0123456789"
+                android:maxLength="4"
+                android:minWidth="150dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/c1"
+                android:textColorHint="@color/c1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/maxAmperage" />
+
+            <EditText
+                android:id="@+id/maxElectricPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/c1"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="Max electric power(W)"
+                android:inputType="text"
+                android:maxLength="6"
+                android:digits="0123456789"
+                android:minWidth="150dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/c1"
+                android:textColorHint="@color/c1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/maxVoltage" />
+
+            <EditText
+                android:id="@+id/power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/c1"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="Power(kW)"
+                android:inputType="text"
+                android:digits="0123456789"
+                android:maxLength="4"
+                android:minWidth="150dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/c1"
+                android:textColorHint="@color/c1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/maxElectricPower" />
+
+
+            <Spinner
+                android:id="@+id/format"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_style"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/power" />
+
+            <Spinner
+                android:id="@+id/powerType"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_style"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/format" />
+
+            <Spinner
+                android:id="@+id/standard"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner_style"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/powerType" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:layout_constraintStart_toStartOf="@id/addConnector"
+                app:layout_constraintTop_toTopOf="@id/addConnector"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:background="@drawable/arrow_left"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

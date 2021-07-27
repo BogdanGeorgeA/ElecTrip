@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c4"
+    tools:context=".MainActivity"
+    tools:openDrawer="end">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_background"
+        tools:context=".LoginActivity">
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="308dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="68dp"
+            android:background="@drawable/blue_button"
+            android:text="Login"
+            android:textColor="@color/mapboxWhite"
+            app:layout_constraintHorizontal_bias="0.495"
+            mapbox:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+            mapbox:layout_constraintEnd_toEndOf="parent"
+            mapbox:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Create an account"
+            android:textColor="@color/mapboxWhite"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <Button
+            android:id="@+id/buttonForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Forgot Password?"
+            android:textColor="@color/mapboxWhite"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            mapbox:layout_constraintBottom_toBottomOf="parent"
+            mapbox:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardview_login"
+            android:layout_width="281dp"
+            android:layout_height="188dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/custom_card_view"
+            app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+            app:layout_constraintVertical_bias="0.2"
+            mapbox:layout_constraintEnd_toEndOf="parent"
+            mapbox:layout_constraintStart_toStartOf="parent"
+            mapbox:layout_constraintTop_toBottomOf="@+id/profilePic"
+            tools:ignore="MissingConstraints">
+
+
+            <EditText
+                android:id="@+id/EmailInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="7dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint=" E-mail address"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/id_person"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/PasswordInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="7dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/id_lock"
+                app:layout_constraintTop_toBottomOf="@+id/EmailInput" />
+
+            <ImageView
+                android:id="@+id/id_person"
+                android:layout_width="25dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="42dp"
+                app:layout_constraintEnd_toStartOf="@+id/EmailInput"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                mapbox:srcCompat="@drawable/ic_person" />
+
+            <ImageView
+                android:id="@+id/id_lock"
+                android:layout_width="25dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginBottom="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/PasswordInput"
+                app:layout_constraintStart_toStartOf="parent"
+                mapbox:srcCompat="@drawable/lock" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

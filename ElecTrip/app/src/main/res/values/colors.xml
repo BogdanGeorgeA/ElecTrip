@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="c1">#13293D</color>
+    <color name="c2">#006494</color>
+    <color name="c3">#1B98E0</color>
+    <color name="c4">#E8F1F2</color>
+    <color name="c5">#247BA0</color>
+    <color name="mapboxWhite">#ffffff</color>
+    <color name="mapboxBlue">#4264fb</color>
+    <color name="mapboxGrayLight">#c6d2e1</color>
+    <color name="mapboxPink">#ee4e8b</color>
+    <color name="mapboxYellow">#d9d838</color>
+    <color name="mapboxRed">#b43b71</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#13293D</color>
+    <color name="seablue">#006494</color>
+    <color name="lapisblue">#247BA0</color>
+    <color name="lightblue">#1B98E0</color>
+    <color name="white">#E8F1F2</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDivider">#ECECEC</color>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#247BA0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/image"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:textSize="15dp"
+        android:text="First Name: "
+        android:textColor="#0C0C0C"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="76dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/firstName"
+        android:text="Last Name: "
+        android:textColor="#0E0E0E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+    <TextView
+        android:id="@+id/listOfCars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastName"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="34dp"
+        android:textSize="15dp"
+        android:text="List of Cars: "
+        android:textColor="#0E0E0E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+
+    <TextView
+        android:id="@+id/listOfChargingStations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listOfCars"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="-20dp"
+        android:layout_toRightOf="@+id/listOfCars"
+        android:textSize="15dp"
+        android:text="List of Charging Stations: "
+        android:textColor="#070707"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="141dp"
+        android:layout_height="132dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_person"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="282dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="4dp"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/firstName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="284dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="3dp"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/lastName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <ScrollView
+        android:layout_width="148dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/listOfChargingStations"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="223dp"
+        android:layout_marginLeft="223dp"
+        android:layout_marginTop="40dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="381dp">
+
+        <TextView
+            android:id="@+id/scrollStations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/ListOfChargingStations"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="148dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/listOfCars"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="40dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="383dp">
+
+        <TextView
+            android:id="@+id/scrollCars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/ListOfCars"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+    </ScrollView>
+
+</RelativeLayout>

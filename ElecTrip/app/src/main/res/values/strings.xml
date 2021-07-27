@@ -1,0 +1,438 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ElecTrip</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="long_dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed leo consectetur, iaculis felis non, porta urna. Integer vulputate nisl at massa facilisis fringilla. Ut egestas, eros placerat placerat accumsan, orci velit finibus sem, in placerat lorem dolor in odio. Mauris auctor tortor eget quam facilisis commodo. Nulla in auctor justo, dapibus pharetra elit. Nam malesuada gravida porttitor. Integer placerat, est condimentum facilisis commodo, magna magna sodales dolor, non vestibulum risus tellus ut nibh. Donec accumsan mauris quis libero ullamcorper, sed tincidunt purus lobortis. Nunc sed leo vel est ullamcorper aliquet id eget dolor. Maecenas imperdiet lorem pellentesque, finibus risus in, mollis dui. Cras bibendum risus id rutrum sagittis. Donec ullamcorper, nisi vel rhoncus ullamcorper, urna ligula pretium nunc, at volutpat ex erat bibendum metus.</string>
+
+    <string name="enter_a_car_manufacturer">Enter a car manufacturer.</string>
+
+    <string name="submitButton">Submit</string>
+
+    <string name="enter_a_car_model">Model</string>
+
+    <string name="Email">Email</string>
+
+    <string name="FacebookRegister">Sign Up with Facebook</string>
+
+    <string name="backButton" />
+
+    <string name="model">Model</string>
+
+    <string name="IbIICh" />
+
+    <string name="IbICharging" />
+
+    <string name="map_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+
+    <string name="ListOfCars">
+        <item>aaaaaaaaa"\n"</item>
+        <item>bbbbbbbbb"\n"</item>
+        <item>cccccccc"\n"</item>
+        <item>ddddddddd"\n"</item>
+        <item>eeeeeeeee"\n"</item>
+        <item>ffffffff"\n"</item>
+        <item>ggggggggg"\n"</item>
+        <item>hhhhhhhhhh"\n"</item>
+        <item>iiiiiiiiii"\n"</item>
+        <item>jjjjjjjjj"\n"</item>
+        <item>kkkkkkkkkk"\n"</item>
+        <item>lllllll"\n"</item>
+        <item>mmmmmmmmmm"\n"</item>
+        <item>nnnnnnnnn"\n"</item>
+        <item>oooooooo"\n"</item>
+        <item>pppppppp"\n"</item>
+        <item>qqqqqqqq"\n"</item>
+        <item>rrrrrrrrrr"\n"</item>
+    </string>
+
+    <string name="ListOfChargingStations">
+        <item>rrrrrrrrrr"\n"</item>
+        <item>qqqqqqqq"\n"</item>
+        <item>pppppppp"\n"</item>
+        <item>oooooooo"\n"</item>
+        <item>nnnnnnnnn"\n"</item>
+        <item>mmmmmmmmmm"\n"</item>
+        <item>lllllll"\n"</item>
+        <item>kkkkkkkkkk"\n"</item>
+        <item>jjjjjjjjj"\n"</item>
+        <item>iiiiiiiiii"\n"</item>
+        <item>hhhhhhhhhh"\n"</item>
+        <item>ggggggggg"\n"</item>
+        <item>ffffffff"\n"</item>
+        <item>eeeeeeeee"\n"</item>
+        <item>ddddddddd"\n"</item>
+        <item>ccccccccc"\n"</item>
+        <item>bbbbbbbb"\n"</item>
+        <item>aaaaaaaaa"\n"</item>
+    </string>
+
+    <string-array name="types">
+        <item>Charge type</item>
+        <item>Rapid</item>
+        <item>Fast</item>
+        <item>Slow</item>
+    </string-array>
+
+    <string-array name="fast">
+        <item>Charge Subtype</item>
+        <item>Type 2_7-22 kW AC</item>
+        <item>Type 1_7 kW AC</item>
+        <item>Commando_7-22 kW AC</item>
+    </string-array>
+
+    <string-array name="rapid">
+        <item>Charge Subtype</item>
+        <item>CHAdeMO_50 kW DC</item>
+        <item>CCS_50–350 kW DC</item>
+        <item>Type 2_43 kW AC</item>
+        <item>Tesla Type 2_150 kW DC</item>
+    </string-array>
+
+    <string-array name="slow">
+        <item>Charge Subtype</item>
+        <item>3-Pin_3 kW AC</item>
+        <item>Type 1_3 kW AC</item>
+        <item>Type 2_3 kW AC</item>
+        <item>Commando_3 kW AC</item>
+    </string-array>
+
+    <string-array name="manufacturers">
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Chevrolet</item>
+        <item>Citroen</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Jaguar_Land_Rover</item>
+        <item>Kia</item>
+        <item>Kyburz</item>
+        <item>Lightning</item>
+        <item>Mahindra</item>
+        <item>Mercedes_Benz</item>
+        <item>Micro_Mobility_Systems</item>
+        <item>Mitsubishi</item>
+        <item>Motores_Limpios</item>
+        <item>MW Motors</item>
+        <item>NIO</item>
+        <item>Nissan</item>
+        <item>ECOmove</item>
+        <item>Peugeot</item>
+        <item>Rayttle</item>
+        <item>Renault</item>
+        <item>Seat</item>
+        <item>Skoda</item>
+        <item>Smart</item>
+        <item>Sono_Motors</item>
+        <item>Stevens</item>
+        <item>Tesla</item>
+        <item>Venturi</item>
+        <item>Volkswagen</item>
+    </string-array>
+
+
+    <string-array name="No_model">
+        <item>"No_Model</item>
+    </string-array>
+
+    <string-array name="Audi">
+        <item>e-tron</item>
+    </string-array>
+
+    <string-array name="BMW">
+        <item>i3</item>
+    </string-array>
+
+    <string-array name="Chevrolet">
+        <item>Bolt EV</item>
+    </string-array>
+
+    <string-array name="Citroen">
+        <item>C-Zero</item>
+    </string-array>
+
+    <string-array name="Honda">
+        <item>Clarity Electric</item>
+    </string-array>
+
+    <string-array name="Hyundai">
+        <item>Ioniq Electric</item>
+        <item>Kona Electric</item>
+    </string-array>
+    <string-array name="Jaguar_Land_Rover">
+        <item>Jaguar I-Pace</item>
+    </string-array>
+
+    <string-array name="Kia">
+        <item>Soul EV</item>
+        <item>e-Niro</item>
+    </string-array>
+
+    <string-array name="Kyburz">
+        <item>Race</item>
+    </string-array>
+    <string-array name="Lightning">
+        <item>Lightning GT</item>
+    </string-array>
+
+    <string-array name="Mahindra">
+        <item>e2o plus</item>
+        <item>e-Verito</item>
+    </string-array>
+
+    <string-array name="Mercedes_Benz">
+        <item>B-Class Electric Drive</item>
+        <item>EQC</item>
+    </string-array>
+
+    <string-array name="Micro_Mobility_Systems">
+        <item>Microlino</item>
+    </string-array>
+
+    <string-array name="Mitsubishi">
+        <item>i-MiEV</item>
+    </string-array>
+
+    <string-array name="Motores_Limpios">
+        <item>Zacua</item>
+    </string-array>
+
+    <string-array name="MW_Motors">
+        <item>Luka EV</item>
+    </string-array>
+
+    <string-array name="NIO">
+        <item>ES8</item>
+    </string-array>
+
+    <string-array name="Nissan">
+        <item>Leaf</item>
+    </string-array>
+
+    <string-array name="ECOmove">
+        <item>QBeak</item>
+    </string-array>
+
+    <string-array name="Peugeot">
+        <item>i0n</item>
+    </string-array>
+
+
+    <string-array name="Rayttle">
+        <item>E28</item>
+    </string-array>
+    <string-array name="Renault">
+        <item>Fluence Z.E.</item>
+        <item>Zoe</item>
+        <item>Twizy</item>
+    </string-array>
+    <string-array name="SEAT">
+        <item>Mii Electric</item>
+    </string-array>
+    <string-array name="Skoda">
+        <item>CITIGOe IV</item>
+    </string-array>
+    <string-array name="Smart">
+        <item>CITIGOe IV</item>
+    </string-array>
+
+
+    <string-array name="Sono_Motors">
+        <item>Sion</item>
+    </string-array>
+    -
+    <string-array name="Stevens">
+        <item>ZeCar</item>
+    </string-array>
+    -
+    <string-array name="Tesla">
+        <item>Model S</item>
+        <item>Model X</item>
+        <item>Model 3</item>
+
+    </string-array>
+    -
+    <string-array name="Venturi">
+        <item>Fétish</item>
+    </string-array>
+    -
+    <string-array name="Volkswagen">
+        <item>e-Golf</item>
+        <item>e-Up</item>
+    </string-array>
+    <string-array name="acc_type">
+        <item>Rapid</item>
+        <item>Fast</item>
+        <item>Slow</item>
+    </string-array>
+    <string-array name="Rapid">
+        <item>CHAdeMO 50 kW DC</item>
+        <item>CCS 50-350 kW DC</item>
+        <item>Type 2 43 kW AC</item>
+        <item>Tesla Type 2 150 kW DC</item>
+    </string-array>
+    <string-array name="Slow">
+        <item>3-Pin – 3 kW AC</item>
+        <item>Type 1 – 3 kW AC</item>
+        <item>Type 2 – 3 kW AC</item>
+        <item>Commando – 3 kW AC</item>
+    </string-array>
+
+
+    <string-array name="Fast">
+        <item>Type 2 – 7-22 kW AC</item>
+        <item>Type 1 – 7 kW AC</item>
+        <item>Commando – 7-22 kW AC</item>
+    </string-array>
+    <string-array name="PayingMethod">
+        <item>Credit Card</item>
+        <item>Cash</item>
+    </string-array>
+
+    <string-array name="PowerType">
+        <item>Power type</item>
+        <item>AC_1_PHASE</item>
+        <item>AC_3_PHASE</item>
+        <item>DC</item>
+    </string-array>
+
+    <string-array name="Format">
+        <item>Format</item>
+        <item>CABLE</item>
+        <item>SOCKET</item>
+    </string-array>
+
+    <string-array name="Standard">
+        <item>Standard</item>
+        <item>CHADEMO</item>
+        <item>DOMESTIC_A</item>
+        <item>DOMESTIC_B</item>
+        <item>DOMESTIC_C</item>
+        <item>DOMESTIC_D</item>
+        <item>DOMESTIC_E</item>
+        <item>DOMESTIC_F</item>
+        <item>DOMESTIC_G</item>
+        <item>DOMESTIC_H</item>
+        <item>DOMESTIC_I</item>
+        <item>DOMESTIC_J</item>
+        <item>DOMESTIC_K</item>
+        <item>DOMESTIC_L</item>
+        <item>IEC_60309_2_single_16</item>
+        <item>IEC_60309_2_three_16</item>
+        <item>IEC_60309_2_three_32</item>
+        <item>IEC_60309_2_three_64</item>
+        <item>IEC_62196_T1</item>
+        <item>IEC_62196_T1_COMBO</item>
+        <item>IEC_62196_T2</item>
+        <item>IEC_62196_T2_COMBO</item>
+        <item>IEC_62196_T3A</item>
+        <item>IEC_62196_T3C</item>
+        <item>PANTOGRAPH_BOTTOM_UP</item>
+        <item>PANTOGRAPH_TOP_DOWN</item>
+        <item>TESLA_R</item>
+        <item>TESLA_S</item>
+    </string-array>
+
+    <string-array name="AdapterStandard">
+        <item>Adapter</item>
+        <item>CHADEMO</item>
+        <item>DOMESTIC_A</item>
+        <item>DOMESTIC_B</item>
+        <item>DOMESTIC_C</item>
+        <item>DOMESTIC_D</item>
+        <item>DOMESTIC_E</item>
+        <item>DOMESTIC_F</item>
+        <item>DOMESTIC_G</item>
+        <item>DOMESTIC_H</item>
+        <item>DOMESTIC_I</item>
+        <item>DOMESTIC_J</item>
+        <item>DOMESTIC_K</item>
+        <item>DOMESTIC_L</item>
+        <item>IEC_60309_2_single_16</item>
+        <item>IEC_60309_2_three_16</item>
+        <item>IEC_60309_2_three_32</item>
+        <item>IEC_60309_2_three_64</item>
+        <item>IEC_62196_T1</item>
+        <item>IEC_62196_T1_COMBO</item>
+        <item>IEC_62196_T2</item>
+        <item>IEC_62196_T2_COMBO</item>
+        <item>IEC_62196_T3A</item>
+        <item>IEC_62196_T3C</item>
+        <item>PANTOGRAPH_BOTTOM_UP</item>
+        <item>PANTOGRAPH_TOP_DOWN</item>
+        <item>TESLA_R</item>
+        <item>TESLA_S</item>
+    </string-array>
+
+    <string-array name="PlugStandard">
+        <item>Plug</item>
+        <item>CHADEMO</item>
+        <item>DOMESTIC_A</item>
+        <item>DOMESTIC_B</item>
+        <item>DOMESTIC_C</item>
+        <item>DOMESTIC_D</item>
+        <item>DOMESTIC_E</item>
+        <item>DOMESTIC_F</item>
+        <item>DOMESTIC_G</item>
+        <item>DOMESTIC_H</item>
+        <item>DOMESTIC_I</item>
+        <item>DOMESTIC_J</item>
+        <item>DOMESTIC_K</item>
+        <item>DOMESTIC_L</item>
+        <item>IEC_60309_2_single_16</item>
+        <item>IEC_60309_2_three_16</item>
+        <item>IEC_60309_2_three_32</item>
+        <item>IEC_60309_2_three_64</item>
+        <item>IEC_62196_T1</item>
+        <item>IEC_62196_T1_COMBO</item>
+        <item>IEC_62196_T2</item>
+        <item>IEC_62196_T2_COMBO</item>
+        <item>IEC_62196_T3A</item>
+        <item>IEC_62196_T3C</item>
+        <item>PANTOGRAPH_BOTTOM_UP</item>
+        <item>PANTOGRAPH_TOP_DOWN</item>
+        <item>TESLA_R</item>
+        <item>TESLA_S</item>
+    </string-array>
+
+    <string name="access_token">pk.eyJ1IjoiYm9nZGFuYm9nZGFuIiwiYSI6ImNrOHBqeXgxdTA1bjYzZXBpaDhxbG1kcGsifQ.8ZJ-FVgbl-PJjW85IYynnQ</string>
+    <string name="user_location_permission_explanation">"Trebe sa ti activizezi locatia bos"</string>
+    <string name="user_location_permission_not_granted">"Nu ai activizat locatia"</string>
+    <string name="start_navigating">Start Navigating</string>
+    <string name="new_location">New Location</string>
+
+    <string name="Name">First Name</string>
+    <string name="Surname">Last Name</string>
+    <string name="Mobile">Phone number</string>
+    <string name="Register">Register</string>
+    <string name="Password">Password</string>
+    <string name="Next">Next</string>>
+    <string name="Confirm">Confirm Password</string>
+    <string name="Back">Back</string>
+    <string name="Login">Login</string>
+    <string name="Reset">Forgot\nPassword</string>
+    <string name="ConfirmForgot" tools:ignore="StringEscaping">We\'ve sent you a code. \nType it bellow to confirm your identity.</string>
+    <string name="ConfirmOption" tools:ignore="StringEscaping">Please select a method to verify your identity.</string>
+    <string name="ChangePassword" tools:ignore="StringEscaping">Please input your new password below.</string>
+    <string name="VerifyCode">Verify</string>
+    <string name="ConfirmChanges">Confirm Changes</string>
+    <string name="CancelChanges">Cancel Changes</string>
+    <string name="Securitycode">Security code</string>
+    <string-array name="confirmOptions">
+        <item>Email</item>
+        <item>Phone Number</item>
+    </string-array>
+    <string name="infoReset">Please enter your email address</string>
+    <string name="Facebook">Login with Facebook</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
