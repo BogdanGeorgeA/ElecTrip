@@ -5,7 +5,13 @@ Android app designed to provide a multitude of facilities for electric car drive
 The main purpose of the application was to facilitate trips made with an electric car over long distances. 
 Finding the charging station along the way could prove to be a challenge, so the app will allow you to find a suitable route in regards with your car and the connectors you have at your disposal.
 
-![](images/ip1.jpeg)
+
+<img src="images/ip1.jpeg" height = 500>
+<img src="images/ip2.jpeg" height = 500>
+<img src="images/ip3.jpeg" height = 500>
+<img src="images/ip4.jpeg" height = 500>
+<img src="images/ip5.jpeg" height = 500>
+
 
 
 
