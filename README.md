@@ -15,6 +15,9 @@ Finding the charging station along the way could prove to be a challenge, so the
 
 
 
+For the app development we used services provided by www.mapbox.com.
+
+
 Full promotional video at: https://www.youtube.com/watch?v=MjQ3TVg_3v8    (Credits for editing: Mija Andrei)
 
 API repository: (Credits to Craciun Mihai)
